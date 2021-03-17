@@ -1,0 +1,203 @@
+#logo {
+    color: rgb(15, 15, 15);
+    text-align: center;
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/* body background styling, padding top = the aligning of summary header */
+body {
+    background: #642d97;
+    padding-top: 65px;
+} 
+
+/* Twitch Image */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* Paragraph */
+.text-center {
+    padding-top: 45px;
+    margin-top: -35px;
+    margin-bottom: 05px;
+    
+}
+
+
+
+div.myTableauViz {
+    width: 550px;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 28px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.text-black {
+    color: black;
+    font-weight: bold;
+
+
+}
+
+.ml-image{
+    width: 120%;
+    margin-left: -20%;
+    padding-bottom: 55px;
+    font-weight: 500;
+    /* text-align: right; */
+    margin-bottom: 20%;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 05px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+.position {
+display: inline-block;
+background-color: #764aa0;
+color: #fff;
+padding: 5px 0;
+border-radius: 50%;
+width: 35px;
+height: 35px;
+text-align: center;
+position: absolute;
+top: 5px;
+left: calc(50% - 138px);
+}
+
+.content {
+    background-color: #fff;
+    position: relative;
+    margin-top: 45px;
+    margin-bottom: 12px;
+    padding-top: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.footer_info {
+    display: inline-block;
+    height: 100px;
+    width: 95%;
+    background-color: #61697e;
+    color: #fff;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: -20px;
+
+
+}
+
+.footer_last {
+    display: inline-block;
+    /* height: 100px; */
+    width: 95%;
+    background-color: #61697e;
+    color: #fff;
+    border-radius: 5px 5px 5px 5px;
+    /* margin-bottom: -55%;
+    padding-bottom: -50%; */
+}
+
+.footer_last > div p {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 03px;
+    margin-bottom: 03px;
+    text-align: center;
+    border: white;
+
+}
+
+/* the Follower and Channel Views formatting for the first 3*/
+#twitch .twitch_top .user .content .footer_info > div p {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 03px;
+    margin-bottom: 05px;
+    text-align: center;
+    border-right: #fff;
+}
+
+
+.user {
+    border-style: ridge;
+    border-image: inherit;
+    width: 27%;
+    float: left;
+    margin-right: 3%;
+    margin-left: 35px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+a:link {
+    color: #764aa0; 
+
+}
+.game {
+    color: #764aa0;
+    font-weight: bold;
+    font-size: 18px;
+    min-height: 52px;
+}
+
+div.tableau {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding-left: 240.5px;
+}
+
+.Report{
+    text-align: left;
+}
+
+div.tableau_streamer {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    /* padding-left: 100.5px; */
+}
+
+.last_user {
+    border-style: ridge;
+    width: 27%;
+    float: left;
+    margin-right: 55px;
+    margin-left: 20%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.final_user {
+    border-style: ridge;
+    width: 27%;
+    float: left;
+    margin-right: 20%;
+    margin-left: 05px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <title>Great Gaming Googlers Influencer</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">  
+      <style> 
+        .navbar-nav.navbar-center { 
+            position: absolute; 
+            left: 50%; 
+            transform: translatex(-50%); 
+        } 
+    </style> 
+</head> 
+  
+<body> 
+      
+
+<!-- Navbar = Latitude -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="logo" href="#">
+        <img src="/static/img/Logo.png" alt="Logo" width="35" height="34" class="d-inline-block align-top">
+        Great Gaming Googlers Influencers</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav navbar-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link active" href="Index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="TopStreamers.html">Top Live Streamers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Games.html">Games</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="review.html">Machine Learning</a>
+            </li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container content md-white">
+    <h1>Machine Learning to Predict Video Game Reviews Recommendations</h1>
+        <!-- <div id="twitch_page"> -->
+            <img src="/static/img/LandingPage.jpg" alt="LandingPage" width="120% "class="center">
+            <div class="mx-auto text-center">                
+            </div>
+            <br>
+            <!-- Background -->
+            <section class="about-section text-center" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                        <b>
+                            <h2 class="text-black-90 mb-4">Background</h2>
+                        </b>
+                            <p class="text-black-55">
+                                Twitch is becoming one of the most influential content and entertainment platforms to date. Every day, millions of people flock to Twitch to watch their favorite entertainers live-stream video games and variety content. Our goal for our project boiled down to two aspects. First, we wanted to display video game viewership data cleanly with information to explain exactly how important Twitch is becoming in the entertainment industry. However, you cant talk about the game viewership without giving credit to the streamers that log on to entertain thousands of people a day. On the Top Live Streamers page, you will find a breakdown of the top streamers on Twitch along with their statistics. After analyzing these aspects of Twitch, it is extrememely apparent that there is a booming amount of growth on the platform, growth that must be capitalized on! No longer is Twitch a place to go and watch amazing gameplay of your favorite game. Twitch has developed a mutually beneficial relationship between the game companies and the day to day streamer. Once a popular streamer plays a new game, the game itself becomes more popular. Vise-versa, when there is a new game growing on twitch, the streamers themselves who play the game gain viewship. this relationship must be looked at and maximized to create a wealth of new business opportunities through collaboration between game companies and the streamers entertaining the viewers every day, as well as a new avenue for advertisements. Twitch is more than a video game platform, so it is time that we all stop treating it as such. Do not overlook Twitch any longer!
+                            </p>
+                            <br>
+                        </div>
+                    </div>                    
+                </div>
+            </section>
+            <div class="twitch">
+                <div style="text-align:left"><img src="/static/img/Twitch.jpeg" alt="Twitch" class="center" width="100%"></div>
+                </div>
+                
+                <br> 
+
+                <section class="about-section text-center" id="about">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                            <b>
+                                <h2 class="text-black-90 mb-4">Machine Learning</h2>
+                            </b>
+                                <p class="text-black-55">
+                                    Sifting through reviews can be tedious and tiring. Not to mention the plethora of reviews that contain false information, ratings that dont match the score, and long paragraph responses. We wanted to create a process that would help sift through reviews quickly and come to a decision faster. We took a data set of over 400,000 reviews on the Steam platform, and set out to create a ML application that measures the sentiment of reviews to decide if the review means the product is recommended or not. All you have to do is copy a review you do not have the time to read, and place it in our text box. The review will run through our prediction model and give you a result along with a reccomendation score.   
+                                </p>
+                                <br>
+                            </div>
+                        </div>                    
+                    </div>
+                </section>
+                <div class="twitch">
+                    <div style="text-align:left"><img src="/static/img/machine-learning.png" alt="machine-learning" class="center" width="100%"></div>
+                    </div>
+
+                <br>
+                <br>
+                    
+                
+                <!-- <div class="ML">
+                    <section class="about-section text-center" id="about">
+                        <div class="ml_container">
+                            <div class="row">
+                                <div class="col-lg-8 mx-auto">
+                                <b>
+                                    <h2 class="text-black-90 mb-4">Add additional Content</h2>
+                                </b>
+                                    <p class="text-black-55">
+                                        Insert more content here!  
+                                    </p>
+                                    <br>
+                                    <div class="ml-image">
+                                    <img src="img/machine-learning.png" width="150% "class="center">
+                                    <br>
+                                    <br>
+                                    <p class="text-black-55"></p>
+                                    <h5>Add some Machine Learning Language.</h5>
+                                   
+                                     
+                                </div>
+                            </div>                    
+                        </div>
+                    </section>
+                    <br>
+                    <br>
+                </div> -->
+    </div> 
+
+
+    
+  <!-- Contact Info-->
+  <section class="contact-section bg-black" id= "contact">
+    <div class="container">
+    <div class="mx-auto text-center">
+        <H1 class="mx-auto my-0 text-uppercase" style="color:white">CONTACT US</H1>
+    </div>
+        <div class="row">
+            <div class="col-md-3 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-basketball-ball text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Todd Tuchek</h4>
+                        <hr class="my-4" />
+                        <div class="small text-black-50">toddtuchek@gmail.com</div>
+                        <a href="https://www.linkedin.com/in/todd-tuchek-182158147/" target="_blank"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/Linkedin-Logo.png" alt="" /></a>
+                        <a href="https://github.com/todd-tuchek" target="_blank"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/github.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-globe-americas text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Carter Alvarez</h4>
+                        <hr class="my-4" />
+                        <div class="small text-black-50">ccalvere@usc.edu.com</div>
+                        <a href="https://www.linkedin.com/in/carter-alvarez-bb2208133/" target="_blank"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/Linkedin-Logo.png" alt="" /></a>
+                        <a href="https://github.com/ccalvare" target="_blank"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/github.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-football-ball text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Issac Perez</h4>
+                        <hr class="my-4" />
+                        <div class="small text-black-50">IsaccPerez@gmail.com</div>
+                        <a href="https://www.linkedin.com/in/NameHere/" target="_blank"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/Linkedin-Logo.png" alt="" /></a>
+                        <a href="https://github.com/Profile/" target="_blank"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/github.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-football-ball text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Lesly Sok</h4>
+                        <hr class="my-4" />
+                        <div class="small text-black-50">leslysok@gmail.com</div>
+                        <a href="https://www.linkedin.com/in/lesly-sok-5200471b2/" target="_blank"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/Linkedin-Logo.png" alt="" /></a>
+                        <a href="https://github.com/LeslySok" target="_blank"><img src="https://zappa-qwyfp6p71.s3-us-west-1.amazonaws.com/static/img/github.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+         
+             <!-- Footer -->
+        </div>
+        <br>
+        <footer class="page-footer font-small footer-dark">
+            <div class="footer-copyright text-center py-3" style="color:white">© USC Data Analytics and Visualization 2021
+            </div>      
+        </footer>
+
+
+</body>
+</html>

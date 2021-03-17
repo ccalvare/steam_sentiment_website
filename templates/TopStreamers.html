@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <title>Top Live Streamers</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}"> 
+      <style> 
+        .navbar-nav.navbar-center { 
+            position: absolute; 
+            left: 50%; 
+            transform: translatex(-50%); 
+        } 
+    </style> 
+</head> 
+  
+<body> 
+      
+
+<!-- Navbar = Latitude -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="logo" href="#">
+        <img src="/static/img/Logo.png" alt="Logo" width="35" height="34" class="d-inline-block align-top">
+        Great Gaming Googlers Influencers</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav navbar-center">
+            <li class="nav-item dropdown">
+                <a class="nav-link" aria-current="page" href="Index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="TopStreamers.html">Top Live Streamers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Games.html">Games</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="review.html">Machine Learning</a>
+                </li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+    <div class="container content md-white">
+        <h1>Top Twitch Streamers</h1>
+        <div class="row">
+            <div id="twitch_page">
+                <img src="/static/img/twitchpanel2.jpeg" alt="twitchpanel2" width="100% "class="center">
+
+        <div class="container content bg-white">
+            <div class="text-center py-1">Twitch is a live-streaming platform for gamers and other lifestyle casters that supports building communities around a shared and streamable interest. Its primary focus is on video game live streaming. Many of these Twitch channels focus on the host playing one particular game, commentating as his fans watch, or involves live streaming gaming tournament. It is more popular than most people realize. In February 2014, it became the fourth largest source of peak internet traffic in the USA. By February 2018 Twitch had reached 2 million broadcasters monthly, with 15 million daily active users.
+        <br>
+        <br>
+                <div id="tableau_streamer">
+                    <div class='tableauPlaceholder' id='viz1615861033198' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TopStreamersbyAverageViewer&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TopStreamersbyAverageViewer&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TopStreamersbyAverageViewer&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1615861033198');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>               
+               </script>
+               <br>
+               <br>
+               <b>
+               <p style="font-size:25px">Top 5 Streamers By Average Views</p>
+               </b>
+               </div>
+               <br>
+
+               <div class="first">
+                <div id="twitch"> 
+                    <div class="twitch_top">
+                        <div class="container">
+                        <div class="switch"></div>
+                  
+                        <div class="followers_top" style="display: none;"></div>
+                        <div class="views_top" style="display: block;"></div>
+                        <div class="user">
+                            <div class="position">1</div>
+                            <div class="content">
+                                <div class="avatar"><img src="/static/img/TOMMYINNIT.jpg" alt="TOMMYINNIT" width="125" height="125"></div>
+                                <div class="name">
+                                    TOMMYINNIT </div>
+                                    <div class="game">
+                                    <a href="https://www.twitch.tv/tommyinnit" target="_blank" style="color:#764aa0;">Click to Subscribe</a>
+                                </div>
+                                    <div class="footer_info">
+                                        <div class="followers">
+                                            <p>Average Views:</p>
+                                            <span>243,667</span>
+                                        </div>
+                                        <div class="views">
+                                            <p>Followers:</p>
+                                            <span>4.4M</span>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="position">2</div>
+                            <div class="content">
+                                <div class="avatar"><img src="/static/img/AURONPLAY.png" alt="AURONPLAY" width="125" height="125"></div>
+                                <div class="name">
+                                    AURONPLAY </div>
+                                    <div class="game">
+                                    <a href="https://www.twitch.tv/auronplay" target="_blank" style="color:#764aa0;">Click to Subscribe</a>
+                                </div>
+                                    <div class="footer_info">
+                                        <div class="followers">
+                                            <p>Average Viewers:</p>
+                                            <span>154,119</span>
+                                        </div>
+                                        <div class="views">
+                                            <p>Followers:</p>
+                                            <span>7.7M</span>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="position">3</div>
+                            <div class="content">
+                                <div class="avatar"><img src="/static/img/QUACKITYHQ.png" alt="QUACKITYHQ" width="125" height="125"></div>
+                                <div class="name">
+                                    QUACKITYHQ </div>
+                                    <div class="game">
+                                        <a href="https://www.twitch.tv/quackityhq" target="_blank" style="color:#764aa0;">Click to Subscribe</a>
+                                    </div>
+                                    <div class="footer_info">
+                                        <div class="followers">
+                                            <p>Average Viewers::</p>
+                                            <span>111,371</span>
+                                        </div>
+                                        <div class="views">
+                                            <p>Followers:</p>
+                                            <span>2.8M</span>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="last">
+            <div class="last_user">
+                <div class="position">4</div>
+                <div class="content">
+                    <div class="avatar"><img src="/static/img/KARLJACOBS.png" alt="KARLJACOBS" width="125" height="125"></div>
+                    <div class="name">
+                        KARLJACOBS </div>
+                        <div class="game">
+                            <a href="https://www.twitch.tv/karljacobs" target="_blank" style="color:#764aa0;">Click to Subscribe</a>
+                        </div>
+                        <div class="footer_last">
+                            <div class="last_followers">
+                                <p>Average Viewers:</p>
+                                <span>100,640</span>
+                            </div>
+                            <div class="last_views">
+                                <p>Followers:</p>
+                                <span>2.2M</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="final_user">
+                <div class="position">5</div>
+                <div class="content">
+                    <div class="avatar"><img src="/static/img/BLASTPREMIER.png" alt="BLASTPREMIER" width="125" height="125"></div>
+                    <div class="name">
+                        BLASTPREMIER </div>
+                        <div class="game">
+                            <a href="https://www.twitch.tv/blastpremier" target="_blank" style="color:#764aa0;">Click to Subscribe</a>
+                        </div>
+                        <div class="footer_last">
+                            <div class="followers">
+                                <p>Average Viewers:</p>
+                                <span>88,628</span>
+                            </div>
+                            <div class="views">
+                                <p>Followers:</p>
+                                <span>215M</span>
+                            </div>
+                    </div>
+                </div>
+            </div>         
+
+        </div>                           
+
+    </div>
+    <br>
+    <footer class="page-footer font-small footer-dark">
+        <div class="footer-copyright text-center py-3" style="color:black">©USC Data Analytics and Visualization 2021
+        </div>      
+    </footer>
+</body>
+</html>

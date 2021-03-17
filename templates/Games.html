@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <title>Top Live Streamers</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}"> 
+      <style> 
+        .navbar-nav.navbar-center { 
+            position: absolute; 
+            left: 50%; 
+            transform: translatex(-50%); 
+        } 
+    </style> 
+</head> 
+  
+<body> 
+      
+
+<!-- Navbar = Latitude -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="logo" href="#">
+        <img src="/static/img/Logo.png" alt="Logo" width="35" height="34" class="d-inline-block align-top">
+        Great Gaming Googlers Influencers</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav navbar-center">
+            <li class="nav-item dropdown">
+            <a class="nav-link" href="Index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="TopStreamers.html">Top Live Streamers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active"  href="Games.html">Games</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="review.html">Machine Learning</a>
+            </li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+    <div class="container content md-white align-items-center">
+        <h1>Game Data Exploration</h1>
+        
+                <div class="tableau">
+                     <div class='tableauPlaceholder' id='viz1615751043236' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MonthlyAverageViews&#47;avgviewsmonthly&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='MonthlyAverageViews&#47;avgviewsmonthly' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MonthlyAverageViews&#47;avgviewsmonthly&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1615751043236');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>                
+                </script>
+                </div>
+
+       
+
+
+        
+        <div class="container content bg-white">
+            <h1>Explaining the Data</h1>
+            <div class="Report">
+            
+                <div id="Among Us"><strong>Among Us:</strong> The game has been out for 2 years but never got media attention or many players. The player base was small only having around 400 daily players for the first two years of its existence. As the company stated, the pandemic mixed with streamer attention created a very quick rise to the top of the multiplayer gaming space. Once popular streamers found the game and started streaming it on twitch and with celebrities like AOC (400,000 views), the game increased in overall popularity on twitch and the player base grew. Twitch has been used in many different ways, but there is no denying that getting a popular streamer on your game is an amazing advertisement that creates commotion about a new game.</div>
+                <br>
+                <div id="Among Us"><strong>Fortnite:</strong> There was a 63.3% increase in average viewers in march of 2018, the biggest increase over its lifetime. Why? Ninja, Drake, and Travis Scott broke twitch. Ninja, the most popular fortnite streamer at the time revolutionized how people think about twitch by collaborating with pop culture superstars to build his brand, as well as bring a massive amount of people to watching fortnite and twitch. This happened at the beginning of march in 2018, leading to a meteoric rise of fortnite over the next year. His influence alone brought other popular streamers to the game and it was the biggest multiplayer game of the year. The fortnite free to play model helped grow the game, as anyone who liked watching it on twitch could download it for free and start playing with their friends. It was free, but the game was making an unbelievable amount of money from their micro transactions within game. This exposure on twitch grew the player base and the game recorded a whopping 2.4 billion dollars of revenue in 2018. It continued sucess but there was a little decline to 1.8 billion in 2019.</div>
+                <br>
+                <div id="Among Us"><strong>Call of Duty:</strong> Call of Duty is a historic franchise that has been around for years and years. However, it did not enjoy big success on twitch. That is until they released their free to play battle royale game in march of 2020 (right in time for the pandemic). This was a much easier game to stream as people are familiar and love watching their favorite streamers play battle royale style games. Popular streamers flocked over from other games like fortnite and were responsible for a massive uptick in viewership and streams for the game. As of August, Warzone has made over 500,000 dollars from their microtransactions from their game, and had over 75 million players. The revenue from this call of duty more than doubles that of the previous game. Streaming has had a clear correlation to the popularity of the game, as the channels and viewership has increased heavily since the game came out. No other call of duty has had this much sucess on twitch or revenue in general than this game. I believe that there is a big correlation between the game having a free to play model mode that is easily streamed and loved by many to watch.</div>
+                <br>
+                <div id="Among Us"><strong>League of Legends:</strong> League of Legends is a model of consistency, and how a competitive scene can keep the game fresh over time, as well as bring fans of the Esport side to twitch and adding to their playerbase. It is always at the top of the most streamed games on Twitch. They made the game free and updated the game after each year of the competitive season to keep the game fresh and keep people playing over a long period of time. They built a successful model of having the game be free but the players spend money on cosmetic items to make your characters look different. This is one way that collaborations could take place in the video game industry. Louis Vuitton did a league of legends collab last year and put their brand on skins within the game, which is exposing their brand to a whole new audience that might have not been keen on fashion. League of Legends relationship with twitch will continue to thrive alongside its ever growing Esports scene</div>
+                <br>
+                <div id="Among Us"><strong>Counter Strike:</strong> The spikes in the viewership data are directly related to the big esport tournaments for counter strike. Counter strike was one of the first popular esport games, and through the support of the competitive scene along with its growth, counter strike has been able to make itself a staple on twitch and in the esport community. This along with League of Legends shows a continued support and growth of the Esport scene, and as of now, the biggest platform to watch these esports is through Twitch. Twitch and Esports benefit from having their players live stream and engage with their community directly. This is an invaluable part of twitch that brings people of the community together and allows them to ask questions, get insights on the game, and feel like a real part of a community.</div>
+                
+            </div>
+                
+         </div>           
+
+                                     
+</body>
+</html>

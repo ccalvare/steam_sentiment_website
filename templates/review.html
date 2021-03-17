@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">    
+    <style> 
+      .navbar-nav.navbar-center { 
+          position: absolute; 
+          left: 50%; 
+          transform: translatex(-50%); 
+      } 
+  </style> 
+
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="logo" href="#">
+            <img src="/static/img/Logo.png" alt="Logo" width="35" height="34" class="d-inline-block align-top">
+            Great Gaming Googlers Influencers</a>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav navbar-center">
+              <li class="nav-item dropdown">
+                <a class="nav-link" aria-current="page" href="Index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="TopStreamers.html">Top Live Streamers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Games.html">Games</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="review.html">Machine Learning</a>
+                </li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <div class="container content md-white align-items-center">
+
+        <h1>Review Validator</h1>
+        <br>
+        <br>
+
+    <form>
+        <textarea id="review_input" name="review" rows="10" cols="30">
+        </textarea>
+        <button type="button" id="submit">Submit!</button>
+    </form>
+
+    <h2>The sentiment of your review is:</h2>
+    <h2 id="recommend"></h2>
+    <h2>The score of your review is:</h2>
+    <h3 id="score"></h3>
+
+    <script>
+        $(function() {
+            $('#submit').click(function() {
+                $.ajax({
+                    type: 'POST',
+                    url: '/predict',
+                    data: $('#review_input').val(),
+                    contentType: false,
+                    cache: false,
+                    processData: false,
+                    success: function(data) {
+                        $('#recommend').text(data["label"])
+                        $('#score').text(data["score"])
+                    },
+                });
+            });
+        });
+    </script>
+    <br>
+    <br>
+</div>
+
+<footer class="page-footer font-small footer-dark">
+    <br>
+      <div class="footer-copyright text-center py-3" style="color: white;">© USC Data Analytics and Visualization 2021
+      </div>      
+  </footer>
+
+</body>
+</html>
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <form>
+        <textarea id="review_input" name="review" rows="10" cols="30">
+        </textarea>
+        <button type="button" id="submit">Submit!</button>
+    </form>
+
+    <h2>The sentiment of your review is:</h2>
+    <h2 id="recommend"></h2>
+    <h2>The score of your review is:</h2>
+    <h3 id="score"></h3>
+
+    <script>
+        $(function() {
+            $('#submit').click(function() {
+                $.ajax({
+                    type: 'POST',
+                    url: '/predict',
+                    data: $('#review_input').val(),
+                    contentType: false,
+                    cache: false,
+                    processData: false,
+                    success: function(data) {
+                        $('#recommend').text(data["label"])
+                        $('#score').text(data["score"])
+                    },
+                });
+            });
+        });
+    </script>
+
+</body>
+</html> -->
